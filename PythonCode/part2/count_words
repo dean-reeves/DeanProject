@@ -1,0 +1,9 @@
+from collections import Counter
+
+def count_words(file_path):
+    with open(file_path, "r", encoding="utf-8") as f:
+        words = f.read().split()
+    return Counter(words)
+
+# 示例调用
+file_path = r"F:\path\to\text.txt"
